@@ -69,7 +69,7 @@ def update_product(products):
                 p['price'] = int(input("Giá mới: ") or p['price'])
                 p['quantity'] = int(input("Số lượng mới: ") or p['quantity'])
             except ValueError:
-                print("Lỗi định dạng số!")
+                print("⚠️ Lỗi: Giá sản phẩm phải là số nguyên dương!")
             return products
     print("Không tìm thấy ID!")
     return products
@@ -84,5 +84,6 @@ def delete_product(products):
     print("Không tìm thấy ID để xóa.")
 
     return products
+
 
 
