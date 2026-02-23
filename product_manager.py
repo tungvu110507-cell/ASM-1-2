@@ -18,7 +18,7 @@ def save_data(products):
     print("\n[ Đã lưu dữ liệu vào file thành công!")
 
 def add_product(products):
-    print("\n--- NHẬP THÔNG TIN SẢN PHẨM MỚI ---")
+    print("\n---*** NHẬP THÔNG TIN SẢN PHẨM MỚI ***---")
     name = input("Tên sản phẩm: ")
     brand = input("Thương hiệu: ")
     try:
@@ -84,4 +84,5 @@ def delete_product(products):
     print("Không tìm thấy ID để xóa.")
 
     return products
+
 
