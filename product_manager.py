@@ -15,7 +15,7 @@ def save_data(products):
     """Lưu danh sách vào file JSON."""
     with open("products.json", "w", encoding="utf-8") as f:
         json.dump(products, f, ensure_ascii=False, indent=4)
-    print("\n[Hệ thống] Đã lưu dữ liệu vào file thành công!")
+    print("\n[ Đã lưu dữ liệu vào file thành công!")
 
 def add_product(products):
     print("\n--- NHẬP THÔNG TIN SẢN PHẨM MỚI ---")
@@ -82,4 +82,5 @@ def delete_product(products):
             print("Đã xóa sản phẩm.")
             return products
     print("Không tìm thấy ID để xóa.")
+
     return products
