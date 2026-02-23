@@ -54,7 +54,7 @@ def display_all_products(products):
     print("="*70)
 
 def search_product_by_name(products):
-    keyword = input("\nNhập tên cần tìm: ").lower()
+    keyword = input("\Vui lòng nhập tên sản phẩm: ").lower()
     results = [p for p in products if keyword in p['name'].lower()]
     display_all_products(results)
 
@@ -84,3 +84,4 @@ def delete_product(products):
     print("Không tìm thấy ID để xóa.")
 
     return products
+
